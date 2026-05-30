@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Roboto_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -31,7 +32,9 @@ export default function RootLayout({
         <header className="header">
           <div className="container header-content">
             <div className="logo">
-              <img src="/logo.png" alt="Manas Microsystems" style={{ height: '70px', width: 'auto' }} />
+              <Link href="/">
+                <img src="/logo.png" alt="Manas Microsystems" style={{ height: '70px', width: 'auto' }} />
+              </Link>
             </div>
             <nav className="nav-links">
               <div className="nav-item">
