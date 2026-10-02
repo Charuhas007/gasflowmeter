@@ -19,6 +19,8 @@ export default function robots(): MetadataRoute.Robots {
         disallow: [
           '/_next/',          // Next.js build assets — not useful to crawlers
           '/api/',            // Internal API routes
+          '/admin/',          // Admin portal
+          '/admin',
           '/*.json$',         // JSON data files
           '/404',             // Error pages
           '/500',
