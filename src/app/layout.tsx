@@ -14,13 +14,29 @@ export const metadata: Metadata = {
   description: "High-precision gas mass flow meter with 100:1 turndown and NIST traceability. Ideal for biogas, compressed air, and flare gas monitoring.",
   keywords: ["Thermal Mass Flow Meter", "Gas Flow Measurement", "Biogas Flow Meter", "Manas Microsystems", "Thermal Dispersion"],
   authors: [{ name: "Manas Microsystems Technical Lead" }],
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+    other: [
+      { rel: "android-chrome", url: "/android-chrome-192x192.png", sizes: "192x192" },
+      { rel: "android-chrome", url: "/android-chrome-512x512.png", sizes: "512x512" },
+    ],
+  },
   openGraph: {
     title: "Thermal Mass Flow Meter | Precision Gas Measurement",
     description: "High-precision gas mass flow meter with 100:1 turndown and NIST traceability.",
     type: "website",
-    url: "https://gasflowmeter.net/thermal-mass-flow-meter",
+    url: "https://gasflowmeter.net",
+    siteName: "Manas Microsystems",
   },
 };
+
 
 export default function RootLayout({
   children,
