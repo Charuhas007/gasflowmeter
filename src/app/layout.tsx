@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Script from "next/script";
 import { Roboto_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -28,6 +29,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-X165PV87ZC"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-X165PV87ZC');
+          `}
+        </Script>
+      </head>
       <body className={robotoMono.variable} style={{ fontFamily: 'var(--font-sans)' }}>
         <header className="header">
           <div className="container header-content">

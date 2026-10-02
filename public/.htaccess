@@ -1,0 +1,171 @@
+# ============================================================
+# GasFlowmeter.net — Apache .htaccess
+# Managed by: Antigravity AI / Manas Micro System
+# Last updated: 2026-10-02
+# ============================================================
+
+Options -Indexes
+ServerSignature Off
+
+# ============================================================
+# 1. ENABLE REWRITE ENGINE
+# ============================================================
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # ----------------------------------------------------------
+  # 2. FORCE HTTPS (HTTP → HTTPS)
+  # ----------------------------------------------------------
+  RewriteCond %{HTTPS} off
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+  # ----------------------------------------------------------
+  # 3. FORCE NON-WWW (www → non-www)
+  # ----------------------------------------------------------
+  RewriteCond %{HTTP_HOST} ^www\.gasflowmeter\.net [NC]
+  RewriteRule ^ https://gasflowmeter.net%{REQUEST_URI} [R=301,L]
+
+  # ----------------------------------------------------------
+  # 4. OLD PAGE → NEW PAGE 301 REDIRECTS
+  #    (from gasflowmeter.net_Site_Inventory_and_301_Redirect_Map.xlsx)
+  # ----------------------------------------------------------
+
+  # Homepage duplicates
+  RewriteRule ^index\.html$ / [R=301,L]
+
+  # About / Company pages
+  RewriteRule ^manas-microsystems\.html$ /about/company-profile/ [R=301,L]
+  RewriteRule ^certificates\.html$ /about/certificates/ [R=301,L]
+  RewriteRule ^quality\.html$ /about/quality/ [R=301,L]
+  RewriteRule ^global-presence\.html$ /about/global-presence/ [R=301,L]
+
+  # Product pages
+  RewriteRule ^thermal-dispersion-mass-flowmeter\.html$ /products/thermal-mass-flow-meter/ [R=301,L]
+  RewriteRule ^compact-gas-flow-meters\.html$ /products/compact-gas-flow-meter/ [R=301,L]
+  RewriteRule ^air-flow-meters\.html$ /products/air-flow-meter/ [R=301,L]
+  RewriteRule ^compact-steam-flow-meters\.html$ /products/compact-steam-flow-meter/ [R=301,L]
+  RewriteRule ^steam-gas-flow-meters\.html$ /products/steam-gas-flow-meter/ [R=301,L]
+  RewriteRule ^insertion-type-thermal-mass-flow-meter\.html$ /products/insertion-type-thermal-mass-flow-meter/ [R=301,L]
+
+  # Gas-type specific pages
+  RewriteRule ^industrial-oxygen-flow-meter\.html$ /gas-type/oxygen-flow-meter/ [R=301,L]
+  RewriteRule ^compressed-air-flow-meter\.html$ /gas-type/compressed-air-flow-meter/ [R=301,L]
+
+  # Resources pages
+  RewriteRule ^download\.html$ /resources/downloads/ [R=301,L]
+  RewriteRule ^download\.php$ /resources/downloads/ [R=301,L]
+  RewriteRule ^Download\.php$ /resources/downloads/ [R=301,L]
+  RewriteRule ^video\.html$ /resources/videos/ [R=301,L]
+
+  # Contact / Enquiry pages
+  RewriteRule ^contact\.html$ /contact/ [R=301,L]
+  RewriteRule ^enquiry\.php$ /contact/ [R=301,L]
+
+  # Orphan / underscore duplicate — do not serve, redirect to home
+  RewriteRule ^_contact\.html$ /contact/ [R=301,L]
+
+  # ----------------------------------------------------------
+  # 5. PDF ASSET REDIRECTS (old path → clean new path)
+  # ----------------------------------------------------------
+
+  # Certificates (old /new certificates/ and /certificates-new/ folders)
+  RewriteRule ^new%20certificates/Central%20Excise%20Reg\.%20Cert\.\.(pdf|PDF)$ /downloads/certificates/central-excise-registration-certificate.pdf [R=301,L,NC]
+  RewriteRule ^new%20certificates/Central%20Excise%20Reg\.%20Cert\.\.(pdf|PDF)$ /downloads/certificates/central-excise-registration-certificate.pdf [R=301,L,NC]
+  RewriteRule ^certificates-new/GST%20CERT\.-27AABCM2639R1ZX\.(pdf|PDF)$ /downloads/certificates/gst-certificate.pdf [R=301,L,NC]
+  RewriteRule ^certificates-new/NEW%20ISO%20CERT\.\.(pdf|PDF)$ /downloads/certificates/iso-certificate.pdf [R=301,L,NC]
+  RewriteRule ^certificates-new/iso-certificate\.(pdf|PDF)$ /downloads/certificates/iso-certificate.pdf [R=301,L,NC]
+  RewriteRule ^certificates-new/ohsas-certificate\.(pdf|PDF)$ /downloads/certificates/ohsas-certificate.pdf [R=301,L,NC]
+  RewriteRule ^new%20certificates/VAT%20CERTIFICATE\.(pdf|PDF)$ /downloads/certificates/vat-certificate.pdf [R=301,L,NC]
+  RewriteRule ^certificates-new/nabl-certificate\.(pdf|PDF)$ /downloads/certificates/nabl-certificate.pdf [R=301,L,NC]
+
+  # Product brochures (old /pdf/ folder)
+  RewriteRule ^pdf/gfm\.(pdf|PDF)$ /downloads/brochures/gas-flow-meter-brochure.pdf [R=301,L,NC]
+  RewriteRule ^pdf/Compact%20Gas%20Flow%20meter\.(pdf|PDF)$ /downloads/brochures/compact-gas-flow-meter-brochure.pdf [R=301,L,NC]
+  RewriteRule ^pdf/Compact%20Steam%20flow%20meter\.(pdf|PDF)$ /downloads/brochures/compact-steam-flow-meter-brochure.pdf [R=301,L,NC]
+  RewriteRule ^pdf/Compact%20GFMcatalog%20\.(pdf|PDF)$ /downloads/brochures/compact-gfm-catalog.pdf [R=301,L,NC]
+  RewriteRule ^pdf/Thermal%20Mass%20Flow%20meter-11\.(pdf|PDF)$ /downloads/brochures/thermal-mass-flow-meter-11.pdf [R=301,L,NC]
+  RewriteRule ^pdf/Steam%20Flow%20Meter-2\.(pdf|PDF)$ /downloads/brochures/steam-flow-meter-2.pdf [R=301,L,NC]
+  RewriteRule ^pdf/Insertion%20Type%20Thermal%20Mass%20flow%20Meter\.(pdf|PDF)$ /downloads/brochures/insertion-type-thermal-mass-flow-meter.pdf [R=301,L,NC]
+  RewriteRule ^pdf/industrial-oxygen-flow-meter\.(pdf|PDF)$ /downloads/brochures/industrial-oxygen-flow-meter.pdf [R=301,L,NC]
+  RewriteRule ^pdf/Compressor-Air-Flow-Meter\.(pdf|PDF)$ /downloads/brochures/compressor-air-flow-meter.pdf [R=301,L,NC]
+
+  # ----------------------------------------------------------
+  # 6. NEXT.JS — Serve static export via Apache
+  #    (only needed when hosting a next export / static build)
+  # ----------------------------------------------------------
+  # If file or directory exists, serve it directly
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  # Try adding .html extension for Next.js static export pages
+  RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI}.html -f
+  RewriteRule ^ %{REQUEST_URI}.html [L]
+
+  # Fallback: pass everything else to Next.js index (for Node/PM2 reverse proxy setups)
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^ /index.html [L]
+
+</IfModule>
+
+# ============================================================
+# 7. CUSTOM ERROR PAGES
+# ============================================================
+ErrorDocument 404 /404.html
+ErrorDocument 500 /500.html
+
+# ============================================================
+# 8. SECURITY HEADERS
+# ============================================================
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set X-XSS-Protection "1; mode=block"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+  # HSTS — enforce HTTPS for 1 year (enable once HTTPS is confirmed working)
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+</IfModule>
+
+# ============================================================
+# 9. GZIP COMPRESSION
+# ============================================================
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css
+  AddOutputFilterByType DEFLATE application/javascript application/json
+  AddOutputFilterByType DEFLATE image/svg+xml application/xml
+  AddOutputFilterByType DEFLATE font/woff font/woff2 application/font-woff
+</IfModule>
+
+# ============================================================
+# 10. BROWSER CACHING
+# ============================================================
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpg "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+  ExpiresByType font/woff "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType text/html "access plus 1 hour"
+</IfModule>
+
+# ============================================================
+# 11. BLOCK SENSITIVE FILES
+# ============================================================
+<FilesMatch "\.(env|log|sh|bak|sql|zip|tar|gz|7z|htpasswd)$">
+  Order allow,deny
+  Deny from all
+</FilesMatch>
+
+# Block underscore backup/orphan files (e.g. _contact.html)
+<FilesMatch "^_">
+  Order allow,deny
+  Deny from all
+</FilesMatch>
