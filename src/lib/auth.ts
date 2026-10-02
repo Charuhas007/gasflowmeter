@@ -1,7 +1,7 @@
 import { NextRequest } from 'next/server';
 
 export const ADMIN_COOKIE_NAME = 'gasflow_admin_token';
-export const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || 'Manas@Flow2026';
+export const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || 'Flow@#0243Gas';
 const TOKEN_SECRET = process.env.ADMIN_TOKEN_SECRET || 'gasflow-secret-token-key-2026';
 
 export function createAdminToken(): string {

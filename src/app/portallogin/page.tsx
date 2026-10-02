@@ -46,7 +46,7 @@ interface Stats {
   closed: number;
 }
 
-export default function AdminPage() {
+export default function PortalLoginPage() {
   const [isAuthenticated, setIsAuthenticated] = useState<boolean | null>(null);
   const [password, setPassword] = useState('');
   const [authError, setAuthError] = useState('');
@@ -298,7 +298,7 @@ export default function AdminPage() {
               <Lock className="w-8 h-8" />
             </div>
             <h1 className="text-2xl font-bold text-slate-900 tracking-tight">
-              GasFlowmeter Admin
+              GasFlowmeter Portal
             </h1>
             <p className="text-slate-500 text-sm mt-1">
               Authorized access to customer inquiries & MariaDB leads
@@ -315,7 +315,7 @@ export default function AdminPage() {
           <form onSubmit={handleLogin} className="space-y-5">
             <div>
               <label className="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-2">
-                Administrator Password
+                Portal Password
               </label>
               <input
                 type="password"
