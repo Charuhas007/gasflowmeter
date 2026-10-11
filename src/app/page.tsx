@@ -58,7 +58,7 @@ export default function Home() {
               </div>
               <div style={{ textAlign: 'center' }}>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" strokeWidth="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-                <div style={{ fontSize: '0.75rem', marginTop: '0.5rem', fontWeight: 600 }}>German Engineering</div>
+                <div style={{ fontSize: '0.75rem', marginTop: '0.5rem', fontWeight: 600 }}>Made in India</div>
               </div>
             </div>
 
@@ -74,8 +74,8 @@ export default function Home() {
             </div>
           </div>
           
-          <div className="hero-image animate-fade-in delay-3" style={{ position: 'relative', display: 'flex', justifyContent: 'center' }}>
-            <img src="/products/thermal-dispersion-mass-flowmeters.webp" alt="Thermal Mass Flow Meters" style={{ width: '100%', maxWidth: '550px', height: 'auto', filter: 'drop-shadow(0 20px 40px rgba(0,0,0,0.1))', mixBlendMode: 'multiply' }} />
+          <div className="hero-image animate-fade-in delay-3" style={{ position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <img src="/products/thermal-dispersion-mass-flowmeters.webp" alt="Thermal Mass Flow Meters - Scirocco 1000" style={{ width: '100%', maxWidth: '580px', height: 'auto', filter: 'drop-shadow(0 20px 40px rgba(0,0,0,0.15))' }} />
           </div>
         </div>
       </section>
@@ -316,30 +316,35 @@ export default function Home() {
         <div className="split-section">
           <div>
             <span className="section-label">WHY CHOOSE MANAS MICRO</span>
-            <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem', lineHeight: 1.2 }}>German Engineering.<br/>Trusted Worldwide.</h2>
+            <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem', lineHeight: 1.2 }}>Made in India.<br/>Trusted Worldwide.</h2>
             <p style={{ fontSize: '1.1rem', color: 'var(--text-secondary)', marginBottom: '2rem' }}>
-              Manas Baumer Group combines German engineering excellence with local expertise to deliver innovative and reliable flow measurement solutions.
+              Manas Microsystems combines proud &ldquo;Made in India&rdquo; engineering excellence with decades of instrumentation expertise to deliver innovative and reliable flow measurement solutions.
             </p>
             
             <ul className="check-list">
-              <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg> German Technology & Quality</li>
+              <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg> Made in India — Global Quality</li>
               <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg> Innovative & Reliable Solutions</li>
               <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg> Customer-Centric Approach</li>
               <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg> Global Presence, Local Support</li>
             </ul>
             
-            <button className="btn btn-outline" style={{ marginTop: '1rem', borderColor: 'var(--primary)', color: 'var(--primary)' }}>
+            <a href="/about/company-profile" className="btn btn-outline" style={{ marginTop: '1rem', borderColor: 'var(--primary)', color: 'var(--primary)' }}>
               Learn More About Us <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ marginLeft: '0.5rem' }}><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </button>
+            </a>
           </div>
           
-          <div className="split-image">
-            <div style={{ height: '400px', background: '#e2e8f0', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <span style={{ color: '#94a3b8' }}>Industrial Plant Image Placeholder</span>
-            </div>
-            <div className="play-button">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" strokeWidth="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-            </div>
+          <div className="split-image" style={{ borderRadius: '24px', overflow: 'hidden', boxShadow: '0 20px 40px rgba(15, 23, 42, 0.12)', aspectRatio: '16 / 9', background: '#0F172A' }}>
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/915zt4_W8tw?si=Fw1l93y18Jjw1K4e"
+              title="Manas Microsystems — Thermal Mass Flow Meters"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+              style={{ width: '100%', height: '100%', display: 'block', border: 0 }}
+            ></iframe>
           </div>
         </div>
       </section>

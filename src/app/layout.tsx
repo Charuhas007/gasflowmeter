@@ -128,7 +128,7 @@ export default function RootLayout({
               <div className="footer-brand">
                 <img src="/footer-logo-white.png" alt="Manas Baumer Group" style={{ height: '55px', width: 'auto', display: 'block', marginBottom: '1.5rem' }} />
                 <p>
-                  Delivering advanced flow measurement solutions with precision, reliability and German engineering excellence.
+                  Proudly Made in India — delivering advanced flow measurement solutions with precision, reliability and indigenous engineering excellence.
                 </p>
                 <div className="social-icons">
                   <a href="https://www.facebook.com/manasmicrosystems" target="_blank" rel="noopener noreferrer" className="social-icon">
