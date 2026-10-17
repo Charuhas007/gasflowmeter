@@ -112,8 +112,8 @@ export default function SciroccoLandingPage() {
             <div className="flex justify-center p-8 bg-white border border-slate-200 rounded-2xl relative group shadow-sm">
               <div className="absolute inset-0 bg-cyan-100 blur-2xl rounded-full opacity-50 group-hover:opacity-100 transition-opacity duration-700" />
               <img 
-                src="https://gasflowmeter.net/images/thermal-dispersion-mass-flowmeter2.png" 
-                alt="Thermal Dispersion Mass Flow Meter" 
+                src="/products/thermal-dispersion-mass-flowmeters.webp" 
+                alt="Thermal Dispersion Mass Flow Meter - Series Scirocco 1000" 
                 className="w-full max-w-[350px] object-contain relative z-10 hover:scale-105 transition-transform duration-500"
               />
             </div>
