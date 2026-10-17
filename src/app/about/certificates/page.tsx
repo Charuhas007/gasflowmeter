@@ -4,14 +4,14 @@ import React from 'react';
 const certificates = [
   {
     title: "ISO 9001\n2015",
-    image: "/certificates/iso-certificate.jpg",
+    image: "/certificates/iso-9001-certificate.jpg",
     bgColor: "bg-[#eaf4ff]", // Light blue
     issuedBy: "Quality Standards",
     year: "Active"
   },
   {
     title: "ISO 14001\n2015",
-    image: "/certificates/iso-certificate-1.jpg",
+    image: "/certificates/iso-14001-certificate.jpg",
     bgColor: "bg-[#eaf4ff]",
     issuedBy: "Environment",
     year: "Active"
@@ -25,7 +25,7 @@ const certificates = [
   },
   {
     title: "ISO 45001\n2018",
-    image: "/certificates/ohsaa-certificate.jpg",
+    image: "/certificates/iso-45001-certificate.jpg",
     bgColor: "bg-[#eef8eb]", // Light green
     issuedBy: "Health & Safety",
     year: "Active"
