@@ -107,14 +107,14 @@ export default function SciroccoLandingPage() {
       {/* Product Description */}
       <section className="py-16 bg-[#F4F7FB]">
         <div className="container mx-auto px-6 max-w-7xl">
-          <div className="grid md:grid-cols-[1fr_1.5fr] gap-16 items-center">
-            {/* Left Image */}
-            <div className="flex justify-center p-8 bg-white border border-slate-200 rounded-2xl relative group shadow-sm">
-              <div className="absolute inset-0 bg-cyan-100 blur-2xl rounded-full opacity-50 group-hover:opacity-100 transition-opacity duration-700" />
+          <div className="grid lg:grid-cols-[1.1fr_1.3fr] gap-12 lg:gap-16 items-center">
+            {/* Left Image - Box removed, scaled to match text block height */}
+            <div className="flex justify-center items-center relative group w-full py-4">
+              <div className="absolute inset-0 bg-cyan-200/40 blur-3xl rounded-full scale-90 opacity-60 group-hover:opacity-90 transition-opacity duration-700 pointer-events-none" />
               <img 
                 src="/products/thermal-dispersion-mass-flowmeters.webp" 
                 alt="Thermal Dispersion Mass Flow Meter - Series Scirocco 1000" 
-                className="w-full max-w-[350px] object-contain relative z-10 hover:scale-105 transition-transform duration-500"
+                className="w-full max-w-[560px] h-auto object-contain relative z-10 drop-shadow-[0_20px_35px_rgba(0,0,0,0.12)] hover:scale-105 transition-transform duration-500"
               />
             </div>
             
@@ -129,12 +129,12 @@ export default function SciroccoLandingPage() {
               </p>
               
               <div className="mt-10 flex flex-col sm:flex-row gap-4">
-                <button className="px-8 py-3.5 bg-cyan-500 text-white font-semibold rounded-lg hover:bg-cyan-600 transition-colors focus:ring-4 focus:ring-cyan-500/20 shadow-lg shadow-cyan-500/30 w-full sm:w-auto text-center">
+                <a href="/contact" className="px-8 py-3.5 bg-cyan-500 text-white font-semibold rounded-lg hover:bg-cyan-600 transition-colors focus:ring-4 focus:ring-cyan-500/20 shadow-lg shadow-cyan-500/30 w-full sm:w-auto text-center inline-block">
                   Request Quote
-                </button>
-                <button className="px-8 py-3.5 bg-white text-slate-700 font-medium rounded-lg border border-slate-200 hover:bg-slate-50 transition-colors flex items-center justify-center group w-full sm:w-auto shadow-sm">
+                </a>
+                <a href="/pdf/Thermal%20Mass%20Flow%20meter-11.pdf" target="_blank" rel="noopener noreferrer" className="px-8 py-3.5 bg-white text-slate-700 font-medium rounded-lg border border-slate-200 hover:bg-slate-50 transition-colors flex items-center justify-center group w-full sm:w-auto shadow-sm">
                   Download Datasheet <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                </button>
+                </a>
               </div>
             </div>
           </div>
