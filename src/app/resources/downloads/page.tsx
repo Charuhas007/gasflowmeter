@@ -6,9 +6,9 @@ const documents = [
     title: "Thermal Mass\nFlow Meter",
     file: "Thermal Mass Flow meter-11.pdf",
     category: "Flow Meters",
-    size: "2.4 MB",
+    size: "1.2 MB",
     bgColor: "bg-[#eaf4ff]", // Light blue
-    image: "/brochures/brochure_thermal.png"
+    image: "/brochures/thermal-mass-flow-meter-brochure.png"
   },
   {
     title: "Gas Flow\nMeters",
@@ -16,7 +16,7 @@ const documents = [
     category: "Flow Meters",
     size: "1.8 MB",
     bgColor: "bg-[#fbe8e4]", // Peach
-    image: "/brochures/brochure_thermal.png"
+    image: "/brochures/compact-gas-flow-meter-brochure.png"
   },
   {
     title: "Air Flow\nMeter",
@@ -30,9 +30,9 @@ const documents = [
     title: "Steam Flow\nMeter",
     file: "Steam Flow Meter-2.pdf",
     category: "Steam Meters",
-    size: "3.1 MB",
+    size: "1.7 MB",
     bgColor: "bg-[#f4effc]", // Lavender
-    image: "/brochures/brochure_thermal.png"
+    image: "/brochures/steam-flow-meter-brochure.png"
   },
   {
     title: "Insertion Type\nThermal Mass",
@@ -84,7 +84,7 @@ export default function DownloadsPage() {
               
               {/* Cutout Button for Download */}
               <a 
-                href={`https://gasflowmeter.net/pdf/${encodeURIComponent(doc.file)}`}
+                href={`/pdf/${encodeURIComponent(doc.file)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="absolute -top-3 -right-3 w-[68px] h-[68px] bg-white rounded-full border-[12px] border-slate-50 text-blue-600 flex items-center justify-center hover:scale-110 hover:bg-blue-600 hover:text-white transition-all z-10 font-light shadow-sm group"

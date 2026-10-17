@@ -10,10 +10,10 @@ const certificates = [
     year: "Active"
   },
   {
-    title: "ISO Cert\nPart 2",
+    title: "ISO 14001\n2015",
     image: "/certificates/iso-certificate-1.jpg",
     bgColor: "bg-[#eaf4ff]",
-    issuedBy: "Quality Standards",
+    issuedBy: "Environment",
     year: "Active"
   },
   {
@@ -24,7 +24,7 @@ const certificates = [
     year: "Certified"
   },
   {
-    title: "OHSAS\n18001",
+    title: "ISO 45001\n2018",
     image: "/certificates/ohsaa-certificate.jpg",
     bgColor: "bg-[#eef8eb]", // Light green
     issuedBy: "Health & Safety",

@@ -396,7 +396,7 @@ export default function SciroccoLandingPage() {
             {/* Threaded */}
             <div className="bg-white border border-slate-200 shadow-sm rounded-[2rem] p-8 hover:border-cyan-500/30 hover:shadow-lg transition-all duration-300 group flex flex-col relative overflow-hidden">
               <div className="h-48 mb-8 flex items-center justify-center relative z-10">
-                <img src="https://gasflowmeter.net/images/Scirocco_1000_2_Threaded-removebg-preview.png" alt="Threaded Connection" className="max-h-full object-contain group-hover:scale-105 transition-transform duration-500" />
+                <img src="/products/scirocco-1000-2-threaded.webp" alt="Threaded Connection - Scirocco 1000-2" className="max-h-full object-contain group-hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="mt-auto relative z-10">
                 <p className="text-cyan-600 text-xs font-semibold mb-2 uppercase tracking-widest">Inline Series</p>
@@ -408,7 +408,7 @@ export default function SciroccoLandingPage() {
             {/* Clamp Type */}
             <div className="bg-white border border-slate-200 shadow-sm rounded-[2rem] p-8 hover:border-cyan-500/30 hover:shadow-lg transition-all duration-300 group flex flex-col relative overflow-hidden">
               <div className="h-48 mb-8 flex items-center justify-center relative z-10">
-                <img src="https://gasflowmeter.net/images/Scirocco_1000-1-removebg-preview.png" alt="Clamp Type Insertion" className="max-h-full object-contain group-hover:scale-105 transition-transform duration-500" />
+                <img src="/products/scirocco-1000-clamp-type-insertion.webp" alt="Clamp Type Insertion - Scirocco 1000-1" className="max-h-full object-contain group-hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="mt-auto relative z-10">
                 <p className="text-cyan-600 text-xs font-semibold mb-2 uppercase tracking-widest">Insertion Probe</p>
@@ -420,7 +420,7 @@ export default function SciroccoLandingPage() {
             {/* Flameproof */}
             <div className="bg-white border border-slate-200 shadow-sm rounded-[2rem] p-8 hover:border-cyan-500/30 hover:shadow-lg transition-all duration-300 group flex flex-col relative overflow-hidden">
               <div className="h-48 mb-8 flex items-center justify-center relative z-10">
-                <img src="https://gasflowmeter.net/images/Scirocco_1000_2_Encloser_gas_group_IIB_Exd_IP66-removebg-preview.png" alt="Flameproof Exd IP66" className="max-h-full object-contain group-hover:scale-105 transition-transform duration-500" />
+                <img src="/products/scirocco-1000-2-exd-flameproof.webp" alt="Flameproof Exd IP66 - Scirocco 1000-2 Exd" className="max-h-full object-contain group-hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="mt-auto relative z-10">
                 <p className="text-cyan-600 text-xs font-semibold mb-2 uppercase tracking-widest">Hazardous Area</p>

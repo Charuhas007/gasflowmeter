@@ -138,11 +138,11 @@ export default function Home() {
             </div>
             <div className="product-card">
               <div className="product-card-img-container">
-                <img src="/products/air1.png" alt="Insertion Air Flow Meter" />
+                <img src="/products/insertion-thermal-mass-flow-meter.webp" alt="Insertion Air Flow Meter" />
               </div>
               <h3 style={{ color: '#0F172A', fontWeight: 800 }}>Insertion Air Flow Meter</h3>
               <p style={{ color: '#475569', fontSize: '0.95rem' }}>Ideal for large pipe diameters and ducts with absolutely minimal pressure drop.</p>
-              <a href="#" className="link-arrow" style={{ color: '#1e3a8a', marginTop: 'auto' }}>Learn More <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+              <a href="/products/insertion-thermal-mass-flow-meter" className="link-arrow" style={{ color: '#1e3a8a', marginTop: 'auto' }}>Learn More <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
             </div>
           </div>
         </div>

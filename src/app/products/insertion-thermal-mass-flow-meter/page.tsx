@@ -7,8 +7,7 @@ import {
   Wind,
   Target,
   ChevronDown,
-  Activity,
-  Maximize
+  Activity
 } from 'lucide-react';
 import Link from 'next/link';
 
@@ -124,11 +123,14 @@ export default function InsertionThermalMassFlowMeterPage() {
               </div>
             </div>
             
-            <div className="flex justify-center p-8 bg-slate-50 rounded-[2rem] relative group z-10 h-full border border-slate-100">
+            <div className="flex justify-center p-6 md:p-8 bg-slate-50 rounded-[2rem] relative group z-10 h-full border border-slate-100">
               <div className="absolute inset-0 bg-indigo-100 blur-2xl rounded-full opacity-40 group-hover:opacity-70 transition-opacity duration-500" />
-              <div className="w-full aspect-[4/3] bg-white rounded-2xl flex flex-col items-center justify-center relative z-10 border-4 border-slate-100 shadow-sm p-6">
-                 <Maximize className="w-16 h-16 text-indigo-500 opacity-80 mb-4" />
-                 <span className="text-slate-500 font-medium text-sm text-center">Engineered for pipelines<br/>above 3" (80mm)</span>
+              <div className="w-full aspect-[4/3] bg-white rounded-2xl flex flex-col items-center justify-center relative z-10 border-4 border-slate-100 shadow-sm p-4 overflow-hidden">
+                <img
+                  src="/products/insertion-thermal-mass-flow-meter.webp"
+                  alt="Insertion Type Thermal Mass Flow Meter"
+                  className="w-full h-full object-contain filter drop-shadow-md group-hover:scale-105 transition-transform duration-500"
+                />
               </div>
             </div>
           </div>
