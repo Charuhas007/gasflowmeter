@@ -242,13 +242,14 @@ export default function AirFlowMeterPage() {
 
       <section className="py-16 bg-[#F4F7FB]">
         <div className="container mx-auto px-6 max-w-7xl">
-          <div className="grid md:grid-cols-[1fr_1.5fr] gap-16 items-center">
-            <div className="flex justify-center p-8 bg-white border border-slate-200 rounded-2xl relative group shadow-sm overflow-hidden">
-              <div className="absolute inset-0 bg-cyan-100 blur-2xl rounded-full opacity-50 group-hover:opacity-100 transition-opacity duration-700" />
+          <div className="grid lg:grid-cols-[1.1fr_1.3fr] gap-12 lg:gap-16 items-center">
+            {/* Left Image - Box and border removed, expanded to maximum space */}
+            <div className="flex justify-center items-center relative group w-full py-4">
+              <div className="absolute inset-0 bg-cyan-200/40 blur-3xl rounded-full scale-90 opacity-60 group-hover:opacity-90 transition-opacity duration-700 pointer-events-none" />
               <img
                 src="/products/thermal-dispersion-mass-flowmeters.webp"
                 alt="Air Flow Meter - Thermal Dispersion Mass Flowmeter"
-                className="w-full max-w-[420px] object-contain relative z-10 hover:scale-105 transition-transform duration-500"
+                className="w-full max-w-[560px] h-auto object-contain relative z-10 drop-shadow-[0_20px_35px_rgba(0,0,0,0.12)] hover:scale-105 transition-transform duration-500"
               />
             </div>
 
