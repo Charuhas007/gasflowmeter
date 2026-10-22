@@ -169,6 +169,7 @@ export default function AirFlowMeterPage() {
       {
         '@type': 'Product',
         name: 'Air Flow Meters for Compressed Air Monitoring',
+        image: 'https://gasflowmeter.net/products/thermal-dispersion-mass-flowmeters.webp',
         brand: { '@type': 'Brand', name: 'Manas Microsystems' },
         description:
           'Compact air flow meters for direct mass flow measurement of compressed air, consumption monitoring, leak identification and compressor performance testing.',
@@ -245,9 +246,9 @@ export default function AirFlowMeterPage() {
             <div className="flex justify-center p-8 bg-white border border-slate-200 rounded-2xl relative group shadow-sm overflow-hidden">
               <div className="absolute inset-0 bg-cyan-100 blur-2xl rounded-full opacity-50 group-hover:opacity-100 transition-opacity duration-700" />
               <img
-                src="/products/air1.png"
-                alt="Compact air flow meter product"
-                className="w-full max-w-[380px] object-contain relative z-10 hover:scale-105 transition-transform duration-500"
+                src="/products/thermal-dispersion-mass-flowmeters.webp"
+                alt="Air Flow Meter - Thermal Dispersion Mass Flowmeter"
+                className="w-full max-w-[420px] object-contain relative z-10 hover:scale-105 transition-transform duration-500"
               />
             </div>
 
