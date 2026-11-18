@@ -44,7 +44,8 @@ export default function CompanyProfile() {
             <div className="relative rounded-3xl overflow-hidden shadow-2xl h-[400px] lg:h-[500px]">
               <img 
                 src="/manas_building.jpg" 
-                alt="Manas Microsystems Facility" 
+                alt="Manas Microsystems Head Office and Flow Meter Manufacturing Facility in Pune, India" 
+                title="Manas Microsystems - Leading Flow Meter Company in India"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -137,9 +138,17 @@ export default function CompanyProfile() {
               <p className="text-slate-700 leading-relaxed mb-12 text-lg">
                 <strong className="text-slate-900">Rugged & Reliable:</strong> Engineered for harsh industrial environments, ensuring long-term stability without degradation across diverse fluid types.
               </p>
-              <div className="mt-auto">
-                <img src="/industrial_pipeline.png" alt="Industrial Pipeline" className="w-full h-[320px] object-cover rounded-2xl shadow-sm" />
-              </div>
+              <figure className="mt-auto overflow-hidden rounded-2xl shadow-sm bg-white border border-slate-200/60">
+                <img 
+                  src="/images/thermal-mass-flow-meter-series-testing-manas.jpg" 
+                  alt="Thermal mass flow meter manufacturer in India - Scirocco 1000 meters in IP67 enclosures under rigorous flow test" 
+                  title="In-line Series Testing of Scirocco 1000 Thermal Mass Flow Meters - Manas Microsystems"
+                  className="w-full h-[280px] object-cover" 
+                />
+                <figcaption className="p-3 text-xs text-slate-600 bg-white border-t border-slate-100 font-medium leading-snug">
+                  In-line series testing of Scirocco 1000 thermal mass flow meters in rugged IP67 enclosures.
+                </figcaption>
+              </figure>
             </div>
 
             {/* Column 2 */}
@@ -155,16 +164,32 @@ export default function CompanyProfile() {
                   Applicable for diverse pipeline architectures with supported line sizes ranging from DN15 to DN200 (1/2" to 8").
                 </p>
               </div>
-              <div className="rounded-3xl overflow-hidden flex-1 relative min-h-[300px]">
-                <img src="/steam_flow.png" alt="Superheated Steam Flow" className="absolute inset-0 w-full h-full object-cover" />
-              </div>
+              <figure className="rounded-3xl overflow-hidden flex-1 relative min-h-[300px] flex flex-col justify-end group shadow-sm">
+                <img 
+                  src="/images/nabl-flow-calibration-facility-chambers.jpg" 
+                  alt="Gas flow meter manufacturer in India - High-capacity calibration chambers supporting line sizes up to DN200" 
+                  title="Dual Calibration Pressure Vessels and Flow Rig - Manas Microsystems Calibration Facility"
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
+                />
+                <figcaption className="relative z-10 p-3 bg-gradient-to-t from-slate-900/85 via-slate-900/50 to-transparent text-white text-xs font-medium leading-snug">
+                  Dual calibration test chambers supporting wide pipeline sizes from DN15 to DN200.
+                </figcaption>
+              </figure>
             </div>
 
             {/* Column 3 */}
             <div className="flex flex-col gap-6 h-full">
-              <div className="rounded-3xl overflow-hidden flex-1 relative min-h-[300px]">
-                <img src="/digital_formula.png" alt="Advanced Formulas Display" className="absolute inset-0 w-full h-full object-cover" />
-              </div>
+              <figure className="rounded-3xl overflow-hidden flex-1 relative min-h-[300px] flex flex-col justify-end group shadow-sm">
+                <img 
+                  src="/images/gas-flow-meter-calibration-test-bench.jpg" 
+                  alt="NABL calibration flow meter company - High-precision test bench achieving less than 0.5% accuracy" 
+                  title="NABL Accredited Gas Flow Meter Calibration Test Bench - Absolute Precision Measurement"
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
+                />
+                <figcaption className="relative z-10 p-3 bg-gradient-to-t from-slate-900/85 via-slate-900/50 to-transparent text-white text-xs font-medium leading-snug">
+                  NABL-accredited ISO 17025 test bench delivering &lt;0.5% absolute accuracy.
+                </figcaption>
+              </figure>
               <div className="bg-[#f4f7f5] rounded-3xl p-8 lg:p-10 flex flex-col justify-between flex-1">
                 <div>
                   <div className="text-6xl font-extrabold text-slate-900 mb-2 tracking-tighter">
@@ -189,9 +214,19 @@ export default function CompanyProfile() {
             
             {/* Left Column */}
             <div className="w-full lg:w-5/12 flex flex-col">
-              <div className="rounded-[40px] overflow-hidden aspect-[4/5] relative shadow-2xl mb-10">
-                <img src="/comparative_tall.png" alt="Industrial Installation" className="absolute inset-0 w-full h-full object-cover" />
-              </div>
+              <figure className="flex flex-col mb-10">
+                <div className="rounded-[40px] overflow-hidden aspect-[4/5] relative shadow-2xl group">
+                  <img 
+                    src="/images/gas-flow-meter-calibration-test-bench.jpg" 
+                    alt="NIST traceable flow calibration test rig - ISO 17025 accredited calibration laboratory at Manas Microsystems" 
+                    title="NIST-Traceable Flow Calibration Test Bench Facility - Manas Microsystems India"
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
+                  />
+                </div>
+                <figcaption className="mt-3 text-xs md:text-sm text-slate-500 font-medium pl-4">
+                  State-of-the-art NIST-traceable flow calibration test rig accredited per ISO/IEC 17025.
+                </figcaption>
+              </figure>
               <div className="pl-4">
                 <h3 className="text-[2rem] font-medium text-slate-900 mb-1 tracking-tight">100% NIST-Traceable</h3>
                 <p className="text-slate-500 text-lg font-medium">Ensuring absolute precision worldwide.</p>
@@ -213,9 +248,19 @@ export default function CompanyProfile() {
                 
                 {/* Sub-Left: Square Image */}
                 <div className="w-full md:w-1/2">
-                  <div className="rounded-[40px] overflow-hidden aspect-square relative shadow-xl">
-                    <img src="/comparative_square.png" alt="Engineer inspecting flow meter" className="absolute inset-0 w-full h-full object-cover" />
-                  </div>
+                  <figure className="flex flex-col">
+                    <div className="rounded-[40px] overflow-hidden aspect-square relative shadow-xl group">
+                      <img 
+                        src="/images/thermal-mass-flow-meter-series-testing-manas.jpg" 
+                        alt="Process instrumentation manufacturer in India - Multi-unit thermal mass flow meter NIST traceable calibration validation" 
+                        title="Multi-Meter NIST Traceable Calibration in Series - Scirocco 1000 Thermal Mass Flow Meter"
+                        className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
+                      />
+                    </div>
+                    <figcaption className="mt-3 text-xs md:text-sm text-slate-500 font-medium px-2">
+                      Simultaneous calibration verification of Scirocco 1000 thermal mass flow meters under identical mass flow conditions.
+                    </figcaption>
+                  </figure>
                 </div>
 
                 {/* Sub-Right: Small Text & Stats */}
