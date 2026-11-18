@@ -140,13 +140,13 @@ export default function CompanyProfile() {
               </p>
               <figure className="mt-auto overflow-hidden rounded-2xl shadow-sm bg-white border border-slate-200/60">
                 <img 
-                  src="/images/thermal-mass-flow-meter-series-testing-manas.jpg" 
-                  alt="Thermal mass flow meter manufacturer in India - Scirocco 1000 meters in IP67 enclosures under rigorous flow test" 
-                  title="In-line Series Testing of Scirocco 1000 Thermal Mass Flow Meters - Manas Microsystems"
+                  src="/images/industrial-gas-pipeline-installation-manas.jpg" 
+                  alt="Industrial flow meter company in India - Rugged IP67 thermal mass flow meter installed on operational factory gas pipeline" 
+                  title="Industrial Gas Pipeline Installation - Rugged IP67 Thermal Mass Flow Meter by Manas Microsystems"
                   className="w-full h-[280px] object-cover" 
                 />
                 <figcaption className="p-3 text-xs text-slate-600 bg-white border-t border-slate-100 font-medium leading-snug">
-                  In-line series testing of Scirocco 1000 thermal mass flow meters in rugged IP67 enclosures.
+                  Rugged IP67 Scirocco 1000 thermal mass flow meter installed on operational factory process piping.
                 </figcaption>
               </figure>
             </div>
@@ -217,14 +217,14 @@ export default function CompanyProfile() {
               <figure className="flex flex-col mb-10">
                 <div className="rounded-[40px] overflow-hidden aspect-[4/5] relative shadow-2xl group">
                   <img 
-                    src="/images/gas-flow-meter-calibration-test-bench.jpg" 
-                    alt="NIST traceable flow calibration test rig - ISO 17025 accredited calibration laboratory at Manas Microsystems" 
-                    title="NIST-Traceable Flow Calibration Test Bench Facility - Manas Microsystems India"
+                    src="/images/thermal-mass-flow-meter-series-testing-manas.jpg" 
+                    alt="NIST traceable flow calibration test rig - In-line simultaneous validation of thermal mass flow meters" 
+                    title="Multi-Meter NIST Traceable Calibration in Series - Scirocco 1000 Thermal Mass Flow Meters"
                     className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
                   />
                 </div>
                 <figcaption className="mt-3 text-xs md:text-sm text-slate-500 font-medium pl-4">
-                  State-of-the-art NIST-traceable flow calibration test rig accredited per ISO/IEC 17025.
+                  Simultaneous in-line NIST-traceable calibration verification of Scirocco 1000 thermal mass flow meters.
                 </figcaption>
               </figure>
               <div className="pl-4">
@@ -251,14 +251,14 @@ export default function CompanyProfile() {
                   <figure className="flex flex-col">
                     <div className="rounded-[40px] overflow-hidden aspect-square relative shadow-xl group">
                       <img 
-                        src="/images/thermal-mass-flow-meter-series-testing-manas.jpg" 
-                        alt="Process instrumentation manufacturer in India - Multi-unit thermal mass flow meter NIST traceable calibration validation" 
-                        title="Multi-Meter NIST Traceable Calibration in Series - Scirocco 1000 Thermal Mass Flow Meter"
+                        src="/images/qc-engineer-inspecting-thermal-mass-flow-meter.jpg" 
+                        alt="Process instrumentation manufacturer in India - Indian QC engineer inspecting flow meter digital readout during quality inspection" 
+                        title="Indian Quality Control Engineer Inspecting Flow Meter Calibration Readout - Manas Microsystems"
                         className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
                       />
                     </div>
                     <figcaption className="mt-3 text-xs md:text-sm text-slate-500 font-medium px-2">
-                      Simultaneous calibration verification of Scirocco 1000 thermal mass flow meters under identical mass flow conditions.
+                      Indian QC engineer inspecting flow meter digital readings to verify NIST-traceable calibration and zero drift.
                     </figcaption>
                   </figure>
                 </div>
